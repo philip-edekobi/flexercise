@@ -1,0 +1,44 @@
+[debug] [2022-02-14T21:45:01.574Z] ----------------------------------------------------------------------
+[debug] [2022-02-14T21:45:01.575Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\phili\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js projects:list
+[debug] [2022-02-14T21:45:01.576Z] CLI Version:   10.2.0
+[debug] [2022-02-14T21:45:01.576Z] Platform:      win32
+[debug] [2022-02-14T21:45:01.576Z] Node Version:  v16.13.2
+[debug] [2022-02-14T21:45:01.577Z] Time:          Mon Feb 14 2022 22:45:01 GMT+0100 (West Africa Standard Time)
+[debug] [2022-02-14T21:45:01.577Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-02-14T21:45:01.579Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-02-14T21:45:01.598Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-02-14T21:45:01.598Z] > authorizing via signed-in user (philipedekobi@gmail.com)
+[debug] [2022-02-14T21:45:01.601Z] > refreshing access token with scopes: []
+[debug] [2022-02-14T21:45:01.602Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-02-14T21:45:01.609Z] FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: getaddrinfo ENOTFOUND firebase-public.firebaseio.com
+    at ClientRequest.<anonymous> (C:\Users\phili\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\node-fetch\lib\index.js:1461:11)
+    at ClientRequest.emit (node:events:390:28)
+    at ClientRequest.emit (node:domain:475:12)
+    at TLSSocket.socketErrorListener (node:_http_client:447:9)
+    at TLSSocket.emit (node:events:390:28)
+    at TLSSocket.emit (node:domain:475:12)
+    at emitErrorNT (node:internal/streams/destroy:157:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+[error] 
+[error] Error: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[debug] [2022-02-14T21:45:01.612Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2022-02-14T21:45:01.619Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\phili\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:145:12)
+    at refreshTokens (C:\Users\phili\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:485:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Client.getAccessToken (C:\Users\phili\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:147:23)
+    at async Client.addAuthHeader (C:\Users\phili\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:138:21)
+    at async Client.request (C:\Users\phili\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:94:34)
+    at async getProjectPage (C:\Users\phili\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:233:17)
+    at async getFirebaseProjectPage (C:\Users\phili\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:250:23)
+    at async listFirebaseProjects (C:\Users\phili\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:281:29)
+    at async Command.actionFn (C:\Users\phili\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\projects-list.js:50:20)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.

@@ -1,0 +1,6 @@
+.navItem:hover{
+    color: rgb(248, 134, 153);
+}
+.active{
+    color: pink!important;
+}
