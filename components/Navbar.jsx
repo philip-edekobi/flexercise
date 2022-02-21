@@ -27,7 +27,7 @@ const BigNav = () => {
   const router = useRouter();
 
   return (
-    <Flex bgColor="white" p="2" w="100%" style={{position: "fixed"}} borderBottom="1px" borderColor="gray.200" >
+    <Flex bgColor="white" p="2" w="100%" >
       <Box ml="6" fontSize="3xl" color="pink.400" fontWeight="700" >
           <Link href="/" paddingLeft="2" passHref style={{cursor: 'pointer'}} >
               Flexercise
@@ -38,7 +38,7 @@ const BigNav = () => {
         <Flex mr="4" >
           {menuOptions.map((option, i) => <NavLink pathname={router.pathname} href={menuOptions[i][1]} key={i} >{option[0]}</NavLink>)}
           <Spacer />
-          <Button colorScheme="pink" >Log In</Button>
+          <Button colorScheme="pink" size="md" >Log In</Button>
         </Flex>
       </Box>
     </Flex>  
@@ -47,7 +47,7 @@ const BigNav = () => {
 
 const SmallNav = () => {
   return (
-    <Flex p="2" style={{position: "relative", top: 0, left: 0}} borderBottom="1px" borderColor="gray.200" >
+    <Flex p="2" borderBottom="1px" borderColor="gray.200" mt="3" >
       <Box ml="6" fontSize="3xl" color="pink.400" fontWeight="700" >
           <Link href="/" paddingLeft="2" passHref style={{cursor: 'pointer'}} >
               Flexercise

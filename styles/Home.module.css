@@ -108,9 +108,56 @@
   margin-left: 0.5rem;
 }
 
+.topHero{
+  background-image: url("../public/assets/images/bg-image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.topHeroText{
+  margin: 13rem 0 0.2rem 6rem; 
+}
+.topHeroSubtext{
+  margin: 0 0 0 6.3rem;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+  .topHero{
+    background-size: contain;
+  }
+  .topHeroText{
+    margin: 3rem 0 0.2rem 1rem ;
+  }
+  .topHeroSubtext{
+    margin: 0 10rem 0 1.1rem;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .topHero{
+    background-size: contain;
+  }
+  .topHeroText{
+    margin: 7rem 0 0.2rem 3rem ;
+  }
+  .topHeroSubtext{
+    margin: 0 10rem 0 3.2rem;
+  }
+}
+
+@media (min-width: 1400px){
+  .topHero{
+    background-size: cover;
+  }
+  .topHeroText{
+    margin: 17rem 0 0.2rem 7rem ;
+  }
+  .topHeroSubtext{
+    margin: 0 10rem 0 7.6rem;
+    font-size: 1.5rem;
   }
 }

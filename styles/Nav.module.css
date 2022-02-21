@@ -4,3 +4,9 @@
 .active{
     color: pink!important;
 }
+
+.navBar{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
