@@ -1,0 +1,6 @@
+.snippet{
+    box-shadow: 0px 0px 22px -2px #ccc;
+    -webkit-box-shadow: 0px 0px 22px -2px #ccc;
+    -moz-box-shadow: 0px 0px 22px -2px #ccc;
+    border-radius: 0.5rem;
+}

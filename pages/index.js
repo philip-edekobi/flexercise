@@ -1,18 +1,19 @@
-import Head from 'next/head';
 import Image from 'next/image';
 
 import { Box, Flex, Text, useMediaQuery } from '@chakra-ui/react';
 import styles from '../styles/Home.module.css';
 import { useRouter } from 'next/router';
+import { Exercises } from '../components';
+import { getExercises } from '../utils/exercise';
 
-export default function Home() {
+export default function Home({ exercises }) {
   const [isSmall] = useMediaQuery('(max-width: 600px)');
   const [isXlarge] = useMediaQuery('(min-width: 1400px)');
   const router = useRouter();
   
   return (
-    <Flex>
-      <Box style={{width: "100vw", height: "100vh"}} className={styles.topHero} >
+    <Flex flexDirection="column">
+      <Box style={{width: "100%"}} className={styles.topHero} >
         <Box className={styles.topHeroText}>
           <Text fontSize={isSmall ? "3xl" : "7xl"} 
             fontWeight="600" 
@@ -41,6 +42,20 @@ export default function Home() {
           </Text>
         </Box>
       </Box>
+      <br />
+      <Box>
+        <Exercises exercises={exercises} />
+      </Box>
     </Flex>
   )
+}
+
+export async function getStaticProps(){
+  const exercises = await getExercises();
+
+  return{
+    props: {
+      exercises
+    }
+  }
 }
