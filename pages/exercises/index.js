@@ -1,6 +1,6 @@
 import React from 'react';
-import { Exercises } from '../components';
-import { getExercises } from '../utils/exercise';
+import { Exercises } from '../../components';
+import { getExercises } from '../../utils/exercise';
 
 const exercises = ({ exercises }) => {
   return (

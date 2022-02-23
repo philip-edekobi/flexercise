@@ -11,8 +11,7 @@ import { useRouter } from 'next/router';
 
 const menuOptions = [
   ["Home", '/'],
-  ["Exercises", "/exercises"],
-  ["Equipment", "/equipment"]
+  ["Exercises", "/exercises"]
 ];
 
 const Navbar = () => {
@@ -64,9 +63,6 @@ const SmallNav = () => {
               </Link>
               <Link href="/exercises" passHref>
                 <MenuItem icon={<GiWeightLiftingUp />}>Exercises</MenuItem>
-              </Link>
-              <Link href="/equipment" passHref>
-                <MenuItem icon={<CgGym />}>Equipment</MenuItem>
               </Link>
             </MenuList>
         </Menu>

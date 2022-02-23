@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import { Exercises } from '../components';
 import { getExercises } from '../utils/exercise';
 
-export default function Home({ exercises }) {
+export default function Home({ exercises, equipment }) {
   const [isSmall] = useMediaQuery('(max-width: 600px)');
   const [isXlarge] = useMediaQuery('(min-width: 1400px)');
   const router = useRouter();
