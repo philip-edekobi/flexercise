@@ -130,34 +130,33 @@
     background-size: contain;
   }
   .topHeroText{
-    margin: 3rem 0 0.2rem 1rem ;
-  }
-  .topHeroSubtext{
-    margin: 0 10rem 0 1.1rem;
+    margin: 3rem 0 0.2rem 2.5rem; 
   }
 }
 
-@media (min-width: 600px) and (max-width: 1024px) {
+@media (min-width: 600px) and (max-width: 936px){
   .topHero{
     background-size: contain;
   }
   .topHeroText{
-    margin: 7rem 0 0.2rem 3rem ;
-  }
-  .topHeroSubtext{
-    margin: 0 10rem 0 3.2rem;
+    margin: 7rem 0 0.2rem 4.5rem; 
   }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 936px) and (max-width: 1040px) {
   .topHero{
-    background-size: cover;
+    background-size: contain;
   }
-  .topHeroText{
-    margin: 17rem 0 0.2rem 7rem ;
+}
+
+@media (min-width: 1040px){
+  .topHero{
+    background-size: stretch;
   }
   .topHeroSubtext{
-    margin: 0 10rem 0 7.6rem;
     font-size: 1.5rem;
+  }
+  .topHeroText{
+    margin: 15rem 0 0.2rem 9rem; 
   }
 }

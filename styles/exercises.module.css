@@ -4,3 +4,25 @@
     -moz-box-shadow: 0px 0px 22px -2px #ccc;
     border-radius: 0.5rem;
 }
+
+.exerciseSnippet{
+    box-shadow: 0px 0px 22px -2px #eee ;
+    -webkit-box-shadow: 0px 0px 22px -2px #eee ;
+    -moz-box-shadow: 0px 0px 22px -2px #eee ;
+    border-radius: 0.5rem;
+}
+
+.arrowContainer{
+    box-shadow: 0px 0px 22px -2px #eee ;
+    -webkit-box-shadow: 0px 0px 22px -2px #eee ;
+    -moz-box-shadow: 0px 0px 22px -2px #eee ;
+    border-radius: 0.8rem;
+    background-color: #dedede;
+    padding: 1rem;
+}
+
+.arrowContainer:hover{
+    color: white;
+    cursor: pointer;
+    padding: 1.5rem;
+}

@@ -27,7 +27,7 @@ const BigNav = () => {
   const router = useRouter();
 
   return (
-    <Flex bgColor="white" p="2" w="100%" >
+    <Flex bgColor="white" p="2" w="100vw" >
       <Box ml="6" fontSize="3xl" color="pink.400" fontWeight="700" >
           <Link href="/" paddingLeft="2" passHref style={{cursor: 'pointer'}} >
               Flexercise
